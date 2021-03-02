@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Odontología Conservadora - Clínica Dental Jerez</title>
+<title>Contacto - Clínica Dental Jerez</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/flexslider.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -12,16 +12,10 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="css/animate.min.css"> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
 <link rel="icon" type="image/png" href="images/logomini.png" sizes="16x16">
 </head>
-<style>
-.row
-{
-    margin-left: 10em;
-}
 
-</style>
 <body>
 <!-- header section -->
 <section class="banner" role="banner">
@@ -59,63 +53,40 @@
           <a href="#" class="nav-toggle">Menú<span></span></a> </div>
       </header>
 
-  <!--CONTENIDO-->
-
-  <section id="services" class="services service-section">
+  <!-- contact section -->
+<section id="contact" class="section">
     <div class="container">
-    <div class="section-header">
-        <h2 class="wow fadeInDown animated">Ortodoncia</h2>
-    </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Brackets <span class="text-muted"> estéticos.</span></h2>
-        <p class="lead">Son los aparatos fijos que se utilizan en Ortodoncia para corregir los defectos en la forma, posición, relación y función de los dientes y los maxilares, la cara y los trastornos funcionales de la masticación. La ortodoncia clásica utiliza habitualmente brackets metálicos, si bien desde hace tiempo existe una opción más estética gracias a que se pueden fabricar con otros materiales, como porcelana, circonio o zafiro.</p>
-        <button type="button" class="btn btn-primary" onclick="location.href='login.html'">Metálicos: 2500€ - 3000€</button>
-        <button type="button" class="btn btn-primary" onclick="location.href='login.html'">Cerámicos: 3500€ - 4500€</button>
-        <button type="button" class="btn btn-primary" onclick="location.href='login.html'">Zafiro: 3500€ - 5000€</button>
-    </div>
-      <div class="col-md-5">
-        <img src="images/brackets1.jpg" width="350px" height="220px">
-
+        <div class="section-header">
+          <h2 class="wow fadeInDown animated">Pedir cita:</h2>
+          <p class="wow fadeInDown animated">Rellene el siguiente formulario para pedir cita.</p>
+        </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 conForm">       
+          <div id="message"></div>
+          <form method="post" action="php/contact.php" name="cform" id="cform" style="margin-top: -50px;">
+            <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Nombre*" required>
+            <input name="lastname" id="lastname" type="text" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Apellidos*" required>
+            <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Correo electrónico" >
+            <input name="tel" id="tel" type="tel" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Número de teléfono*" required>
+            <input name="date" id="date" type="date" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" required>
+            <input name="time" id="time" type="time" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" required>
+            <div class="form-check">
+              <p>Los campos con * son obligatorios.</p>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Acepto la política y protección de datos.
+              </label>
+            </div>
+            <input type="submit" id="submit" name="send" class="submitBnt" value="Pedir cita">
+            <div id="simple-msg"></div>
+          </form>
+        </div>
       </div>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Sistema <span class="text-muted"> Damon.</span></h2>
-        <p class="lead">Es un aparato de arco recto avanzado, diseñado y perfeccionado. Ayuda a los profesionales a armonizar la biología con mecánicas de tratamiento utilizando fuerzas más suaves para conseguir resultados excepcionales de manera sencilla.</p>
-        <button type="button" class="btn btn-primary" onclick="location.href='login.html'">1900€ - 3600€</button>
-    </div>
-      <div class="col-md-5 order-md-1">
-        <img src="images/brackets.jpg" width="450px" height="220px">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Invisalign</h2>
-        <p class="lead">Es una técnica de ortodoncia invisible que permite alinear los dientes y mejorar la sonrisa de los pacientes mediante el uso de alineadores transparentes, fabricados de forma personalizada para que los dientes adopten una posición correcta de manera progresiva.
-        Los alineadores, al no ser un aparato fijo, se pueden retirar para comer y cepillar los dientes, siendo la técnica más higiénica de ortodoncia. Además, como son totalmente transparentes, casi nadie notará que los llevas puestos.</p>
-        <button type="button" class="btn btn-primary" onclick="location.href='login.html'">4500€ - 5500€</button>
-    </div>
-      <div class="col-md-5">
-        <img src="images/Invisalign.jpg" width="350px" height="280px">
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
   </section>
-
-  <!--FIN CONTENIDO-->
+  <!-- contact section --> 
+  <!-- Footer section -->
+  
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -135,7 +106,7 @@
       </div>
     </div>
   </footer>
-  
+  <!-- Footer section --> 
   <!-- JS FILES --> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
   <script src="js/bootstrap.min.js"></script> 
@@ -154,5 +125,4 @@
               });
           });
       </script> 
-
 </html>
